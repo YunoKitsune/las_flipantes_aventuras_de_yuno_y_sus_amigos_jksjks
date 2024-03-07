@@ -1,0 +1,8 @@
+#color-operador{
+    -fx-border-radius: 100;
+    -fx-text-fill: brown;
+    -fx-background-color: linear-gradient(
+        rgb(255,255,255),
+        rgb(255,0,0)
+    );
+}

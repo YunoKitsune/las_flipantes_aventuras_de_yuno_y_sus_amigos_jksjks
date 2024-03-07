@@ -1,5 +1,44 @@
 .root{
+    -fx-background-image: url("https://i0.wp.com/savepoint.es/wp-content/uploads/2015/05/LOVE-LIVE-SIF.png"), url("https://1.bp.blogspot.com/-gdFUCVwt5us/XeMfoSocRpI/AAAAAAAAObs/hhHWVEfUXjU3T_mZ90k5-eqCXMQvxbbKgCLcBGAsYHQ/s200/Logo-TecNM-2017.png");
+    -fx-background-size: 100%, 300px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center, top left;
+}
 
-    -fx-background-image: url("https://i0.wp.com/savepoint.es/wp-content/uploads/2015/05/LOVE-LIVE-SIF.png");
+.menu-bar{
+    -fx-background-color: blue;
+    -fx-background-color: rgba(223, 49, 28, 100);
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}
+
+.menu{
+    -fx-background-color: white;
+}
+
+.label{
+    -fx-background-color: green;
+    -fx-padding: 3;
+}
+
+.menu: hover{
+    -fx-background-color: yellow;
+}
+.label: hover{
+    -fx-background-color: black;
+    -fx-font-size: 10pt;
+}
+
+.menu-item{
+    -fx-background-color: #5C9AA1;
+    -fx-border-color: #000;
+}
+
+.menu-item: hover{
+    -fx-background-color: #000;
+    -fx-text-fill: black;
+}
+
+.button{
 
 }
