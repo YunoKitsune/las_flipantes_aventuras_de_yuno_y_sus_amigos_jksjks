@@ -71,25 +71,6 @@ public class CuadroMagicoUI {
         anadirCuadricula();
     }
 
-    private void crearCuadriculaCon0(){
-        int complejidad = 25;
-        grdCuadrados = new GridPane();
-        btnContenedor = new Button[complejidad][complejidad];
-        for(int fila=0; fila<complejidad; fila++){
-            for (int columna=0; columna<complejidad; columna++){
-                btnContenedor[fila][columna] = new Button("00000");
-                btnContenedor[fila][columna].setFont(fuenteMuyPequena);
-                //btnContenedor[fila][columna].setDisable(true);
-                btnContenedor[fila][columna].setPrefSize(55,25);
-                Label lblActual = new Label("00000");
-                grdCuadrados.add(lblActual, columna, fila);
-            }
-        }
-        grdCuadrados.setHgap(10);
-        grdCuadrados.setVgap(10);
-    }
-
-
     private void anadirCuadricula(){
         lblGrdCuadrados = new Label();
         lblGrdCuadrados.setGraphic(grdCuadrados);
