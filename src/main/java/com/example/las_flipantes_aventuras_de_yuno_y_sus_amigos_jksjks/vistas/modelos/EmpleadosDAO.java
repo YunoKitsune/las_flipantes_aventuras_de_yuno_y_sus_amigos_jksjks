@@ -72,7 +72,7 @@ public class EmpleadosDAO {
         catch (Exception e){ e.printStackTrace(); }
     }
     public void ACTUALIZAR(){
-        String query = "UPDATE Empleado SET nombre ="+nombre+", rfc = '"+rfc+"', salario = "+salario+", telefono = '"+telefono+"', direccion = '"+direccion+"'" +
+        String query = "UPDATE Empleado SET nombre ='"+nombre+"', rfc = '"+rfc+"', salario = "+salario+", telefono = '"+telefono+"', direccion = '"+direccion+"'" +
                 "WHERE id_empleado = "+id_empleado;
         try{
             Statement stmt = Conexion.connection.createStatement();

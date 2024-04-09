@@ -1,8 +1,7 @@
 package com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks;
 
-import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.Calculadora;
-import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.EmpleadoTaqueria;
-import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.Memorama;
+import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.componentes.Hilo;
+import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.*;
 import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.modelos.Conexion;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +18,7 @@ public class HelloApplication extends Application {
 
     private MenuBar menuBarPrincipal;
     private Menu menuParcial1, menuParcial2, menuSalida;
-    private MenuItem mitCalculadora, mitMemorama, mitSalir, mitEmpleado;
+    private MenuItem mitCalculadora, mitMemorama, mitSalir, mitEmpleado, mitCuadroMagico, mitPista;
     private BorderPane bdpPanel;
 
     @Override
@@ -50,12 +49,19 @@ public class HelloApplication extends Application {
         mitMemorama.setOnAction(event -> new Memorama());
         mitEmpleado = new MenuItem("Empleado Taqueria");
         mitEmpleado.setOnAction(event -> new EmpleadoTaqueria());
+        mitCuadroMagico = new MenuItem("Cuadro mágico");
+        mitCuadroMagico.setOnAction(event -> new CuadroMagico());
+
+        mitPista = new MenuItem("Pista");
+        mitPista.setOnAction(event -> new Pista());
+
 
         menuParcial1 = new Menu("Primer parcial");
-        menuParcial1.getItems().addAll(mitCalculadora, mitMemorama, mitEmpleado);
+        menuParcial1.getItems().addAll(mitCalculadora, mitMemorama, mitEmpleado, mitCuadroMagico);
 
         //Menu parcial 2:
         menuParcial2 = new Menu("Segundo parcial");
+        menuParcial2.getItems().addAll(mitPista);
 
         //Menu salir:
         menuSalida = new Menu("Salir");
