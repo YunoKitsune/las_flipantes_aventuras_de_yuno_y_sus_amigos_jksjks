@@ -67,7 +67,6 @@ public class CuadroMagicoUI {
         anadirCosasDeMenuDerecha();
     }
     private void crearYAnadirCuadricula(){
-        //crearCuadriculaCon0();
         anadirCuadricula();
     }
 
@@ -75,16 +74,9 @@ public class CuadroMagicoUI {
         lblGrdCuadrados = new Label();
         lblGrdCuadrados.setGraphic(grdCuadrados);
         lblGrdCuadrados.setAlignment(Pos.BOTTOM_LEFT);
-        //hCuadros.getChildren().add(lblGrdCuadrados);
-        //hCuadros.setAlignment(Pos.BASELINE_LEFT);
-        //hCuadros.setSpacing(30);
         hContenido.setAlignment(Pos.TOP_CENTER);
+    }
 
-    }
-    public void actualizarCuadricula(){
-        lblGrdCuadrados.setGraphic(grdCuadrados);
-        hCuadros.getChildren().add(lblGrdCuadrados);
-    }
     private void crearLabelsHud(){
         lblHudMensajeArriba = new Label(
                 "Escribe los números especificados en los limites y presione el boton \"Crear\"");
@@ -92,7 +84,6 @@ public class CuadroMagicoUI {
         lblHudMensajeArriba.setFont(fuentePrincipal);
 
         lblHudNumCuadradosLado = new Label("Numero de cuadrados por lado (impar entre 3 y 23):");
-        //lblnumCuadradosLado.setPrefHeight(50);
         lblHudNumCuadradosLado.setFont(fuentePrincipal);
 
         lblHudNumMinimo = new Label("El número más pequeño que aparecerá (de 0 a 9,999,000):");
@@ -111,9 +102,6 @@ public class CuadroMagicoUI {
         btnCrearYResolver.setFont(fuentePrincipal);
         btnCrearYResolver.setPrefSize(180, 30);
 
-        /*btnReiniciar = new Button("Reiniciar");
-        btnReiniciar.setFont(fuentePrincipal);
-        btnReiniciar.setPrefSize(180, 30);*/
     }
 
     private void anadirCosasDeHud(){
