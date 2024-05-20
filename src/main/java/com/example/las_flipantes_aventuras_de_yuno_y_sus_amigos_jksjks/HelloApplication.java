@@ -1,10 +1,9 @@
 package com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks;
 
-import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.componentes.Hilo;
 import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.*;
 import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.modelos.Conexion;
+import com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.MemoramaBootstrap;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;

@@ -5,9 +5,12 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 
 public class CuadroMagicoUI {
@@ -18,7 +21,7 @@ public class CuadroMagicoUI {
     private Label lblMenuSumaFijo, lblMenuSuma, lblMenuNumMinimoFijo, lblMenuNumMinimo, lblMenuNumMaximoFijo, lblMenuNumMaximo;
     private TextField txtNumCuadrosLado, txtNumPequeno;
     private Button btnCrearYResolver, btnReiniciar;
-    private Button[][] btnContenedor;
+    //private Button[][] btnContenedor;
     private final Font fuentePrincipal = new Font("Arial", 21);
     private final Font fuenteMenu = new Font("Arial", 15);
     public final Font fuenteMuyPequena = new Font("Arial", 10);
@@ -101,7 +104,6 @@ public class CuadroMagicoUI {
         btnCrearYResolver = new Button("Crear");
         btnCrearYResolver.setFont(fuentePrincipal);
         btnCrearYResolver.setPrefSize(180, 30);
-
     }
 
     private void anadirCosasDeHud(){

@@ -71,7 +71,6 @@ public class CuadroMagicoLogica {
             escribirSiguientesNumeros();
         }
         mensajeExito();
-
     }
 
     private void escribirSiguientesNumeros() throws IOException{

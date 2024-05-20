@@ -46,6 +46,9 @@ public class EmpleadoTaqueria extends Stage {
         bpnPrincipal = new BorderPane();
         bpnPrincipal.setTop(tlbMenu);
         bpnPrincipal.setCenter(tbvEmpleados);
+        Label lblR = new Label("Label Random");
+        //bpnPrincipal.setTop(lblR);
+        btnAgregarEmpleado.getStylesheets().add("");
         pnlPrincipal = new Panel("Taqueria");
         pnlPrincipal.getStyleClass().add("panel-primary");
         //vPrincipal = new VBox(tlbMenu, tbvEmpleados);

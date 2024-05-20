@@ -10,4 +10,5 @@ module com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks {
     requires org.kordamp.bootstrapfx.core;
     requires mariadb.java.client;
     opens com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas.modelos;
+    opens com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.vistas;
 }
