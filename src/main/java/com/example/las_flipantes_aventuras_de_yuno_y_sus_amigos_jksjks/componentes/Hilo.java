@@ -3,16 +3,7 @@ package com.example.las_flipantes_aventuras_de_yuno_y_sus_amigos_jksjks.componen
 import javafx.scene.control.ProgressBar;
 
 public class Hilo extends Thread{
-
     private ProgressBar pgbCarril;
-    public ProgressBar getPgbCarril() {
-        return pgbCarril;
-    }
-
-    public void setPgbCarril(ProgressBar pgbCarril) {
-        this.pgbCarril = pgbCarril;
-    }
-
     public Hilo(String name){
         super(name);
     }
@@ -30,5 +21,13 @@ public class Hilo extends Thread{
             }
             catch(Exception e){}
         }
+    }
+
+    public ProgressBar getPgbCarril() {
+        return pgbCarril;
+    }
+
+    public void setPgbCarril(ProgressBar pgbCarril) {
+        this.pgbCarril = pgbCarril;
     }
 }
